@@ -1,8 +1,8 @@
 # ReelEngine
 
-**Soflas ReelEngine** is a lightweight, self-hosted web application for authenticated Instagram Reel conversion and private video management.
+**Soflas ReelEngine** is a lightweight, self hosted web application for authenticated Instagram Reel conversion and private video management.
 
-It is designed as a small, security-conscious service that can run on infrastructure controlled by Soflas Developments while keeping each user's account, conversion history, usage limits, and downloaded files isolated from other users.
+It is designed as a small, security conscious service that can run on infrastructure controlled by Soflas Developments while keeping each user's account, conversion history, usage limits, and downloaded files isolated from other users.
 
 The project is open source under the **MIT License**.
 
@@ -30,15 +30,23 @@ ReelEngine is currently a working web application focused on Instagram Reel conv
 * Request and login rate limiting
 * Secure session cookies
 * Security response headers
-* Container-level hardening
+* Container level hardening
 * Health monitoring
-* Mobile-friendly web interface
+* Mobile friendly web interface
 * Reel history story viewer
 * Soflas branding
+* Soflas favicon and application icon
+* Open Graph and social sharing metadata
 
 ## What ReelEngine does
 
 A user can create an account, authenticate, submit an Instagram Reel URL, and have ReelEngine process the video.
+
+The current public deployment is available at:
+
+https://reels.soflasdevelopments.co.za
+
+The public application includes Soflas branding, browser favicon support, and social sharing metadata for platforms that generate link previews.
 
 Completed conversions are associated with the authenticated user who created them.
 
