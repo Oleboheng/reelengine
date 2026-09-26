@@ -1,0 +1,176 @@
+export async function renderPrivacy() {
+  const page = document.createElement("main");
+  page.className = "public-page";
+
+  page.innerHTML = `
+    <article class="public-page__content">
+      <header class="public-page__header">
+        <p class="public-page__eyebrow">ReelEngine</p>
+        <h1>Privacy Policy</h1>
+        <p class="public-page__updated">Last updated: 25 September 2026</p>
+      </header>
+
+      <section>
+        <h2>1. Introduction</h2>
+        <p>
+          ReelEngine is a video conversion service operated by Soflas Developments.
+          This Privacy Policy explains what information ReelEngine collects,
+          how that information is used, and how users can request deletion of
+          their account and associated personal information.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Information we collect</h2>
+        <p>Depending on how you use ReelEngine, we may store:</p>
+        <ul>
+          <li>Your email address.</li>
+          <li>Your first and last name, where provided.</li>
+          <li>A securely stored password hash when you create an email/password account. ReelEngine does not store your plain-text password.</li>
+          <li>Information identifying an OAuth account when you sign in with Google or Facebook, including the provider identity and information supplied by that provider.</li>
+          <li>Session information required to keep you signed in.</li>
+          <li>Video conversion history, including the submitted Instagram URL, video title, filename, file size, duration, status, error information where applicable, and relevant timestamps.</li>
+          <li>Daily usage information used to enforce ReelEngine's conversion limits.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. How we use your information</h2>
+        <p>We use this information to:</p>
+        <ul>
+          <li>Create and maintain your ReelEngine account.</li>
+          <li>Authenticate you and keep your account secure.</li>
+          <li>Process requested video conversions.</li>
+          <li>Provide your conversion history and completed files.</li>
+          <li>Apply service usage limits and help prevent abuse.</li>
+          <li>Maintain, troubleshoot, and secure the ReelEngine service.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Google and Facebook login</h2>
+        <p>
+          ReelEngine may allow you to sign in using Google or Facebook.
+          When you use an external authentication provider, ReelEngine receives
+          information made available by that provider for authentication,
+          such as your provider account identifier and, where available,
+          your email address and name.
+        </p>
+        <p>
+          ReelEngine does not receive your Google or Facebook password.
+          OAuth authentication is handled through the respective provider's
+          authentication system.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Video files and conversion history</h2>
+        <p>
+          When you request a conversion, ReelEngine processes the submitted
+          URL and temporarily stores the resulting file so that you can access
+          the completed conversion through your account.
+        </p>
+        <p>
+          ReelEngine limits the amount of conversion history retained for an
+          account. Older history is automatically removed when it exceeds the
+          configured history limit.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Cookies and session technology</h2>
+        <p>
+          ReelEngine uses necessary session and security cookies to authenticate
+          users and protect the application. These cookies are not intended to
+          be used for advertising or cross-site tracking.
+        </p>
+        <p>
+          ReelEngine may also use a server-side authentication mechanism when
+          communicating with third-party authentication providers. These
+          mechanisms are separate from advertising or tracking cookies placed
+          in your browser.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Security</h2>
+        <p>
+          ReelEngine uses security measures designed to protect accounts and
+          stored information, including hashed passwords, authenticated
+          sessions, access controls, secure cookies where enabled, and
+          restrictions on access to user-specific conversion files.
+        </p>
+        <p>
+          No internet service can guarantee absolute security, but we take
+          reasonable measures to protect information processed by ReelEngine.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Data retention</h2>
+        <p>
+          Account information is retained while an account remains active.
+          Session information expires according to the service's session
+          settings. Conversion history and associated files are subject to
+          ReelEngine's configured history-retention limits.
+        </p>
+        <p>
+          Information may be retained where reasonably necessary to comply
+          with legal obligations, resolve disputes, enforce security measures,
+          or protect the service.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Your rights and data deletion</h2>
+        <p>
+          You may request access to, correction of, or deletion of personal
+          information associated with your ReelEngine account, subject to
+          applicable legal requirements.
+        </p>
+        <p>
+          For instructions on requesting deletion of your ReelEngine account
+          and associated information, see the
+          <a href="/data-deletion" data-route-link>Data Deletion Instructions</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Third-party services</h2>
+        <p>
+          ReelEngine may use third-party services necessary to provide
+          authentication or other parts of the service. Those services may
+          process information according to their own privacy policies and
+          terms.
+        </p>
+      </section>
+
+      <section>
+        <h2>11. Changes to this policy</h2>
+        <p>
+          This Privacy Policy may be updated when ReelEngine's functionality,
+          data practices, or legal requirements change. The latest version
+          will be published on this page with an updated date.
+        </p>
+      </section>
+
+      <section>
+        <h2>12. Contact</h2>
+        <p>
+          For privacy questions or requests concerning your personal
+          information, contact:
+        </p>
+        <p>
+          <a href="mailto:admin@soflasdevelopments.co.za">admin@soflasdevelopments.co.za</a>
+        </p>
+      </section>
+
+      <footer class="public-page__footer">
+        <a href="/" data-route-link>Return to ReelEngine</a>
+        <a href="/data-deletion" data-route-link>Data Deletion Instructions</a>
+      </footer>
+    </article>
+  `;
+
+  return page;
+}

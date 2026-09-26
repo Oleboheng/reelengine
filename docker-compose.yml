@@ -1,0 +1,48 @@
+services:
+  reelengine:
+    build:
+      context: .
+    container_name: soflas-reelengine
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    user: "1000:1000"
+
+    volumes:
+      - ./data:/app/data
+      - ./downloads:/app/downloads
+
+    tmpfs:
+      - /tmp:size=256m,noexec,nosuid,nodev
+
+    read_only: true
+
+    cap_drop:
+      - ALL
+
+    security_opt:
+      - no-new-privileges:true
+
+    pids_limit: 128
+    mem_limit: 1g
+    cpus: "2.0"
+
+    networks:
+      - web-net
+
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+networks:
+  web-net:
+    external: true
