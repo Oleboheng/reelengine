@@ -14,7 +14,10 @@ export function createAuthShell({
   const brand = document.createElement("a");
   brand.className = "auth-brand";
   brand.href = "/auth/sign-in";
-  brand.textContent = "ReelEngine";
+  brand.innerHTML = `
+    <img src="/assets/soflas-logo.png" alt="Soflas" />
+    <span>ReelEngine</span>
+  `;
 
   const panel = document.createElement("div");
   panel.className = "auth-panel";

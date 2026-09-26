@@ -20,9 +20,9 @@
   --success: #6ee7b7;
   --info: #93c5fd;
 
-  --accent-pink: #f472b6;
-  --accent-purple: #a78bfa;
-  --accent-orange: #fb923c;
+  --accent-pink: #22d3ee;
+  --accent-purple: #06b6d4;
+  --accent-orange: #38bdf8;
 
   --radius-sm: 12px;
   --radius-md: 18px;
@@ -144,10 +144,10 @@ input::placeholder {
 }
 
 input:focus {
-  border-color: rgba(167,139,250,.65);
+  border-color: rgba(6,182,212,.65);
   background: rgba(255,255,255,.045);
   box-shadow:
-    0 0 0 3px rgba(167,139,250,.12),
+    0 0 0 3px rgba(6,182,212,.12),
     0 8px 30px rgba(0,0,0,.12);
 }
 

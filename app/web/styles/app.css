@@ -39,7 +39,7 @@
   border-radius: 13px;
   background:
     radial-gradient(circle at 28% 22%, rgba(255,255,255,.2), transparent 34%),
-    linear-gradient(135deg, #312e81 0%, #7c3aed 48%, #db2777 100%);
+    linear-gradient(135deg, #083344 0%, #0891b2 48%, #0e7490 100%);
   box-shadow:
     0 10px 30px rgba(124, 58, 237, .24),
     0 4px 14px rgba(219, 39, 119, .12),
@@ -129,7 +129,7 @@
 }
 
 .dashboard-welcome h1 span {
-  background: linear-gradient(110deg, #f7f7f8 10%, #c4b5fd 52%, #f9a8d4 90%);
+  background: linear-gradient(110deg, #f7f7f8 10%, #67e8f9 52%, #a5f3fc 90%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -170,8 +170,8 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(167,139,250,.7),
-    rgba(244,114,182,.55),
+    rgba(6,182,212,.7),
+    rgba(34,211,238,.55),
     transparent
   );
   content: "";
@@ -386,7 +386,7 @@
   border: 1px solid var(--border);
   border-radius: 12px;
   background:
-    radial-gradient(circle at 70% 20%, rgba(244,114,182,.14), transparent 45%),
+    radial-gradient(circle at 70% 20%, rgba(34,211,238,.14), transparent 45%),
     var(--surface-raised);
   color: var(--muted-strong);
   font-size: 12px;
@@ -487,7 +487,7 @@
   border: 1px solid var(--border);
   border-radius: 14px;
   background:
-    linear-gradient(145deg, rgba(167,139,250,.12), rgba(244,114,182,.04)),
+    linear-gradient(145deg, rgba(6,182,212,.12), rgba(34,211,238,.04)),
     var(--surface-raised);
   color: var(--muted-strong);
   box-shadow: 0 18px 45px rgba(0,0,0,.2);
@@ -547,7 +547,7 @@
   border: 1px solid var(--border);
   border-radius: 13px;
   background:
-    linear-gradient(145deg, rgba(167,139,250,.14), rgba(244,114,182,.06)),
+    linear-gradient(145deg, rgba(6,182,212,.14), rgba(34,211,238,.06)),
     var(--surface-raised);
   color: var(--text);
   font-size: 14px;
